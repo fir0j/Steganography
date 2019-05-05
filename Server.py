@@ -52,7 +52,7 @@ def switch(choice):
     switcher = {
         0: SHOW_IMAGE(),
         1: DECODE_MESSAGE(),
-        2: BOTH
+        2: BOTH()
     }
     return switcher.get(choice, "Invalid Choice")
 
@@ -103,10 +103,10 @@ try:
         else:
             print("Invalid Choice")
 
+    # choice = 0
     # while(choice < 3):
-    #     switch(choice)
     #     choice = int(raw_input("Enter Your Choice: "))
-    #     continue
+    #     switch(choice)
 
     SOCKET.close()
 

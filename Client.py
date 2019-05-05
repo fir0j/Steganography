@@ -15,7 +15,8 @@ try:
     SOCKET.connect(ADDRESS)
     print("Connection Successful\n")
 
-    image1 = Image.open("myimage.png")
+    IMAGE_NAME = raw_input("Enter the Absolute path of your Image: ")
+    image1 = Image.open(IMAGE_NAME)
     print("Take a look at Your Image")
     image1.show()
     CIPHERTEXT = raw_input(
