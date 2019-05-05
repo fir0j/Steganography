@@ -4,7 +4,7 @@
 import Image
 import stepic
 
-image1 = Image.open("nature.png")
+image1 = Image.open("myimage.png")
 steg = stepic.encode(image1, 'This is hidden text firoj')
 # steg = stepic.encode(i, text)
 
@@ -16,4 +16,4 @@ image2.show()
 eimage = Image.open("stegnofied.png")
 s = stepic.decode(eimage)
 data = s.decode()
-print data
+print(data)
